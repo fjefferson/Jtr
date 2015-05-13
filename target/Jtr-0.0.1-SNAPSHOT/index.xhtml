@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" >
+
+<ui:composition template="template/commonLayout.xhtml">
+	<ui:define name="contentTitle">Pagina Inicial</ui:define>
+	<ui:define name="content">
+	    
+         
+	    <div class="jumbotron">
+        <h1>Projeto Ivy (Ivysaur) </h1>
+        <p class="lead success">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>
+<!--         <img src="/Jtr/template/img/ivy.png" class="img-thumbnail img-home" alt="Ivysaur" width="200"/> -->
+        </p>
+      	</div>
+         
+      	<h:panelGroup id="a">
+			<h:panelGroup id="fields" rendered="#{funcionarioBean.insert}">
+				insert
+			</h:panelGroup>
+			<h:panelGroup id="fields2" rendered="#{funcionarioBean.search}">
+				search
+			</h:panelGroup>
+      	</h:panelGroup>
+		
+		
+			<h:inputText value="#{funcionarioBean.state}"/>
+			<p:commandButton value="Send" actionListener="#{funcionarioBean.salvar}" update="form"/>
+		
+	</ui:define>
+</ui:composition>
+</html>
+

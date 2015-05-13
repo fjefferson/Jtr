@@ -1,0 +1,3 @@
+br\com\ivy\app\model\entity\QVendedor.class
+br\com\ivy\app\model\entity\QMercadoria.class
+br\com\ivy\app\model\entity\QFuncionario.class
