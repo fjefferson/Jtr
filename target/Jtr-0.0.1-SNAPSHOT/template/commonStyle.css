@@ -1,9 +1,0 @@
-.btn{
-	 padding: 0px 0px;
-}
-.col-btn{
-	padding:10px;
-}
-.col-btn:FIRST-CHILD {
-	padding-right: 5px;
-}
