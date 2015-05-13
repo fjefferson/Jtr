@@ -29,12 +29,10 @@
     	<param-name>primefaces.THEME</param-name>
     	<param-value>bootstrap</param-value>
  	</context-param>
-<<<<<<< HEAD
-=======
  	
  	<context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/security.xml</param-value>
+  	 	<param-name>contextConfigLocation</param-name>
+  	 	<param-value>/WEB-INF/security.xml</param-value>
 	</context-param>
  	
  	<!-- security -->
@@ -47,8 +45,7 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     
- 
-
->>>>>>> b5dd063fc374db9802c3699df71d510bf27830ab
+    
+    
     
 </web-app>
