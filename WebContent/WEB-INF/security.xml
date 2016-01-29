@@ -9,7 +9,19 @@
  
     <http auto-config="true" >
         <intercept-url pattern="/index.xhtml" access="hasRole('ROLE_USER')"/>
-        <form-login login-page="/login.xhtml" authentication-failure-url="/login.jsf?erro=true"/>
+        <form-login
+        	login-page="/login.xhtml" 
+        	authentication-failure-url="/login.xhtml?erro=true"
+        	login-processing-url="/j_spring_security_check" 
+        	username-parameter="j_username" 
+        	password-parameter="j_password"
+        	default-target-url="/"  />
+       	<logout 
+        	logout-url="/logout.xhtml"
+        	logout-success-url="/login.xhtml?out=1"
+        	delete-cookies="JSESSIONID"
+        	invalidate-session="true" 
+        	/>
         <csrf disabled="true"/>
     </http>
 
@@ -17,7 +29,7 @@
     <authentication-manager>
 	    <authentication-provider>
 	        <user-service>
-	          <user name="test" password="test" authorities="ROLE_AUTHENTICATED" />
+	          <user name="test" password="test" authorities="ROLE_USER" />
 	        </user-service>
 	    </authentication-provider>
 	</authentication-manager>

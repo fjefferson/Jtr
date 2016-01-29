@@ -6,7 +6,6 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.event.ComponentSystemEvent;
 import javax.faces.model.DataModel;
 import javax.faces.model.ListDataModel;
-import javax.inject.Inject;
 import javax.inject.Named;
 
 import br.com.ivy.app.model.entity.Mercadoria;
@@ -20,7 +19,7 @@ public class MercadoriaBean extends ViewHandler implements Serializable {
 
 	private static final long serialVersionUID = 7427601269049478948L;
 
-	@Inject
+//	@Inject
 	private IServiceMercadoria service;
 
 	private Mercadoria mercadoria = new Mercadoria();
