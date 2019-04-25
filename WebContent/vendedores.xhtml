@@ -29,7 +29,7 @@
 					<p:commandButton value="Limpar" type="reset" styleClass=""/>
 					&nbsp;
 					<p:commandButton value="Voltar" >
-					<f:ajax event="click" render="form" immediate="true" listener="#{vendedorBean.cancel}"/>
+					<p:ajax event="click" update="form" immediate="true" listener="#{vendedorBean.cancel}"/>
 					</p:commandButton>
 				</div>
 					
@@ -59,7 +59,7 @@
 
 		<div class="breadcrumb right">
 			<h:commandButton value="Novo" styleClass="btn-info">
-			<f:ajax event="click" render="form" immediate="true" listener="#{vendedorBean.prepareInsert}"/>
+			<p:ajax event="click" update="form" immediate="true" listener="#{vendedorBean.prepareInsert}"/>
 			</h:commandButton>
 		</div>		
 	

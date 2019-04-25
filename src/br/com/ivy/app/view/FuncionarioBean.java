@@ -19,8 +19,8 @@ public class FuncionarioBean extends ViewHandler implements Serializable {
 
 	private String state = getViewState().name();
 	
-	@Inject
-	private IServiceFuncionario service;
+//	@Inject
+//	private IServiceFuncionario service;
 
 	private Funcionario funcionario = new Funcionario();
 
